@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>modtest-parent</artifactId>
+        <groupId>com.wangnz</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>modtest-mod2</artifactId>
+    <packaging>war</packaging>
+    <name>modtest-mod2 Maven Webapp</name>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <!-- 依赖其他模块-->
+        <dependency>
+            <groupId>com.wangnz</groupId>
+            <artifactId>modtest-mod1</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>modtest-mod2</finalName>
+    </build>
+</project>
